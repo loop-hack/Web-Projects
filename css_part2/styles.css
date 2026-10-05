@@ -1,0 +1,50 @@
+/* Reset basic browser margins and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f9; /* Soft background color behind the card */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.war-card {
+    /* Centering and sizing */
+    display: block;
+    margin: 100px auto; 
+    max-width: 900px; /* Limits maximum width on large screens */
+    width: 95%; /* Allows shrinking on smaller screens */
+    
+    /* Styling */
+    background-color: antiquewhite;
+    padding: 30px;
+    border-radius: 12px; /* Softens the corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a nice depth effect */
+    text-align: center;
+}
+
+.war-card h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.pic {
+    max-width: 100%; /* Ensures the image never overflows its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Matches the card's rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+
+.bio {
+    font-size: 1.25rem; /* Better readability (roughly 20px) */
+    line-height: 1.6; /* Improves line spacing */
+    color: #444;
+    text-align: justify; /* Makes the paragraph edges straight */
+    padding: 0 15px;
+}

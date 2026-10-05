@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="design.css">
+    </head>
+
+        <body>
+        <!-- <div>
+            <h1>Humans have reached Mars</h1>
+            <img src="https://cdn.britannica.com/62/291462-050-CB22C74B/planet-mars-solar-system.jpg" width="100%">
+            <h3>The Starship rocket successfully landed on the red planet this morning.</h3>
+            <p>After a 115 days long journey, the crew of 12 finally arrived to their destination. This is the first time humans have set
+                foot on a planet other than Earth.
+            </p>
+            <div>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZuNa565iTKMfpjgBQP6BqCWX_zlqAlsz-LnvIZTXzjkbl9UyaN-dZhFuT&s=10" width="100%" >
+            </div>
+        </div>
+
+        <input type="text" placeholder="Enter Username">
+        <input type="password" placeholder="Enter Password">
+        <input type="date" placeholder="Enter Your Birthdate">
+        <input type="time" placeholder="TimeZone">
+        <input type="color" placeholder="Profile Color">
+        <input type="file" id="avtar">
+        <button>Sign Up</button> -->
+
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+
+        <!-- <h1>Ankit Anurag</h1>
+        <p>Developer | Student | Boxer</p>
+        <a href="work.html">Check out my project here.</a>
+        <p>Read Safety Blog <a href="blog.html">here</a></p> -->
+        
+        <!-- <h1>Beijing Olympics</h1>
+
+        <ol>
+            <li>Norway</li>
+            <li>Germany</li>
+            <li>China</li>
+            <li>US</li>
+        </ol>
+
+        <h2>Participated Countries Are: </h2>
+
+        <p>Note: Here ul is for unordered List and ol is for Ordered List</p>
+
+
+        <ul>
+            <li>China</li>
+            <li>Germany</li>
+            <li>Norway</li>
+            <li>US</li>
+        </ul>
+
+        <ol>
+            <li>Him</li>
+            <li>Dude</li>
+            <li>Fit</li>
+        </ol> -->
+
+
+<div class="profile-card">
+    <img src="vkk.jpg" alt="Virat Kohli"> 
+    <h1>NAME : VIRAT KOHLI</h1>
+    <h2>OCCUPATION: RIGHT HAND BATSMAN</h2>
+    <p>Bio : One of the greatest Cricketers Alive.</p>
+    
+    <h3>Played For -</h3>
+    <ol>
+        <li>India</li>
+        <li>RCB</li>
+        <li>Delhi</li>
+    </ol>
+    
+    <div class="fanclub-form">
+        <input type="email" placeholder="Enter Email"> 
+        <button class="join">Join FanClub</button>
+    </div>
+
+    <div>
+        <button class="following">Follow</button>
+    </div>
+
+</div>
+
+
+    </body>
+
+    <script>
+        const emailInput = document.querySelector('.fanclub-form input');
+        const joinButton = document.querySelector('.fanclub-form button');
+        const profileCard = document.querySelector('.profile-card');
+
+        const messageDisplay = document.createElement('p');
+        messageDisplay.style.fontSize = '0.85rem';
+        messageDisplay.style.marginTop = '15px';
+        messageDisplay.style.fontWeight = 'bold';
+        profileCard.appendChild(messageDisplay);
+
+        joinButton.addEventListener('click', function() {
+            const emailValue = emailInput.value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailValue === '') {
+                messageDisplay.style.color = '#d32f2f';
+                messageDisplay.textContent = 'Please enter an email address!';
+            } else if (!emailPattern.test(emailValue)) {
+                messageDisplay.style.color = '#d32f2f';
+                messageDisplay.textContent = 'Please enter a valid email format (e.g., name@email.com).';
+            } else {
+                messageDisplay.style.color = '#2e7d32';
+                messageDisplay.textContent = `Success! Added ${emailValue} to the FanClub.`;
+
+                emailInput.value = '';
+
+                setTimeout(() => {
+                    messageDisplay.textContent = '';
+                }, 4000);
+            }
+        });
+    </script>
+
+</html>

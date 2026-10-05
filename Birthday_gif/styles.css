@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Happy Monkey";
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("images/demon_slayer.gif");
+    background-size: cover;
+    flex:1;
+    margin-bottom: 100px;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avtar {
+    border-radius: 200px;
+    border: 6px solid orange;
+}
+
+h1, h2, p {
+    font-size: 50px;
+    color: azure;
+    text-shadow: 0 0  1px rgba(156, 3, 3, 0.825);
+}
+
+p {
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.room_img {
+    border: 5px solid black;
+    width: 50% ;
+}
+
+.room:hover {
+
+    background-image: url("images/room.webp");
+
+
+}
+
+.room {
+    font-size: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-image: url("images/zombie.webp");
+    background-size: cover;
+    padding: 5px 40px;
+    border: 10px solid black;
+    border-radius: 20px;
+    height: 400px;
+    width: 30%;
+
+}
+
+.tab {
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+}

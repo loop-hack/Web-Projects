@@ -1,0 +1,89 @@
+/* body {
+    display: flex;
+    background: rgb(158, 47, 3);
+    color: antiquewhite;
+    font-size: 20;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+/* 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.Cookikes_para {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px, 20px;
+    border-radius: 8px;
+    margin: 0;
+    font: bolder;
+    font-style: italic;
+    text-align: center;
+} */
+
+.main {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.google_logo {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search_bar {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 30px;
+    padding: 8px;
+    color: #222222;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
