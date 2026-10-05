@@ -76,9 +76,12 @@ p {
     background-color: rgb(56, 29, 4);
     width: 100%;
     margin-top: 100px;
+    background: linear-gradient(#432b0b, #440606);
+
 }
 
 .footer-text {
+    padding:10px;
     height: min-content;
     font-size: 20px;
     color: antiquewhite;
