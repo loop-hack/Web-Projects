@@ -22,13 +22,22 @@
 // }
 
 
-let lap1  = 34;
-let lap2 = 33;
-let lap3 = 36;
+// let lap1  = 34;
+// let lap2 = 33;
+// let lap3 = 36;
 
-function raceTime(lap1,lap2,lap3){
-    return lap1 + lap2 + lap3
+// function raceTime(lap1,lap2,lap3){
+//     return lap1 + lap2 + lap3
+// }
+
+// let totalLapTime = raceTime(lap1,lap2,lap3)
+// console.log(totalLapTime)
+
+let lapCompleted = 0;
+
+function incrementLap(lapCompleted){
+    return lapCompleted + 1
 }
 
-let totalLapTime = raceTime(lap1,lap2,lap3)
-console.log(totalLapTime)
+lapCompleted = incrementLap(lapCompleted)
+console.log(lapCompleted)
