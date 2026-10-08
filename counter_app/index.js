@@ -33,11 +33,20 @@
 // let totalLapTime = raceTime(lap1,lap2,lap3)
 // console.log(totalLapTime)
 
-let lapCompleted = 0;
+//let lapCompleted = 0;
 
-function incrementLap(lapCompleted){
-    return lapCompleted + 1
+// function incrementLap(lapCompleted){
+//     return lapCompleted + 1
+// }
+
+// lapCompleted = incrementLap(lapCompleted)
+// console.log(lapCompleted)
+
+let countEl = document.getElementById("count-el")
+console.log(countEl)
+let count = 0
+function increment(){
+    count = count + 1
+    countEl.innerText = count
+    console.log(count)
 }
-
-lapCompleted = incrementLap(lapCompleted)
-console.log(lapCompleted)
